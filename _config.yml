@@ -10,27 +10,30 @@
 ############################
 
 # Name of website
-title: My website
+title: Halil İbrahim Ergül
 
 # Your name to show in the footer
-author: Some Person
+author: Halil İbrahim Ergül
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
+# I've set up a standard portfolio navigation.
+# You will need to create the corresponding files (e.g., aboutme.md, projects.md, publications.md)
+# and place your CV PDF in the specified path.
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Projects: "projects"
+  Publications: "publications"
+  CV: "/assets/pdf/CV.pdf" # Assumes you will place your CV here
 
 ################
 # --- Logo --- #
 ################
 
 # Image to show in the navigation bar - works best with a square image
+# IMPORTANT: Replace this with a path to your own professional photo.
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/assets/img/avatar-icon.png"
 
@@ -47,27 +50,28 @@ round-avatar: true
 #####################################
 
 # Select the social network links that you want to show in the footer.
-# You can change the order that they show up on the page by changing the order here.
-# Uncomment the links you want to show and add your information to each one.
+# I have added your LinkedIn and Google Scholar, and left GitHub as an option.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  email: "your-email@example.com" # IMPORTANT: Add your email address here
+  linkedin: halil-i-ergul # From your URL https://www.linkedin.com/in/halil-i-ergul/
+  google-scholar: L9S6bKAAAAAJ # From your URL
+  rss: true # remove this line if you don't want to show an RSS link at the bottom
+# --- Social networks you can add later ---
+#  github: yourusername
+#  twitter: yourusername
+#  facebook: yourusername
+#  patreon: yourusername
+#  youtube: "@yourusername"
+#  whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
-#  linkedin: daattali
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
+#  stackoverflow: "youruserid/yourusername"
+#  snapchat: yourusername
+#  instagram: yourusername
 #  spotify: yourname
 #  telephone: +14159998888
-#  steam: deanat78
+#  steam: yourusername
 #  twitch: yourname
 #  yelp: yourname
 #  telegram: yourname
@@ -75,7 +79,6 @@ social-network-links:
 #  mastodon: instance.url/@username
 #  bluesky: yourname
 #  ORCID: your ORCID ID
-#  google-scholar: your google scholar
 #  discord: "invite_code" or "users/userid" or "invite/invite_code"
 #  kaggle: yourname
 #  hackerrank: yourname
@@ -86,23 +89,25 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: The portfolio and personal blog of Halil İbrahim Ergül.
 
 ###########################
 # --- General options --- #
 ###########################
 
 # Select which social network share links to show in posts
+# I've kept LinkedIn active as it's a professional network.
 share-links-active:
-  twitter: true
-  facebook: true
+  twitter: false
+  facebook: false
   linkedin: true
   vk: false
   reddit: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+# IMPORTANT: Replace this with your actual domain name when you have one.
+url-pretty: "HalilErgul.com"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -128,14 +133,14 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+#keywords: "your, name, research, portfolio, etc"
 
 ######################################
 # --- Colours / background image --- #
 ######################################
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
-
+# These are the default colours, which are clean and professional. You can change them later.
 page-col: "#FFFFFF"
 text-col: "#404040"
 link-col: "#008AFF"
@@ -196,6 +201,7 @@ footer-hover-col: "#0085A1"
 # --- Comments --- #
 ####################
 
+# Comments are disabled by default. You can enable one of these services if you plan to have a blog.
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
 #disqus: ""
 
@@ -260,7 +266,8 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+# I've updated the timezone to be more relevant for your location in Ireland.
+timezone: "Europe/Dublin"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -302,4 +309,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
