@@ -24,8 +24,8 @@ author: Halil İbrahim Ergül
 # and place your CV PDF in the specified path.
 navbar-links:
   About Me: "aboutme"
-  Projects: "projects"
-  Publications: "publications"
+  Projects: "https://github.com/halilergul1"
+  Publications: "https://scholar.google.com/citations?user=L9S6bKAAAAAJ&hl=en"
   CV: "/assets/pdf/CV.pdf" # Assumes you will place your CV here
 
 ################
