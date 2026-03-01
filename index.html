@@ -1,5 +1,226 @@
 ---
-layout: home
-title: Halil's website
-subtitle: Projects, Ideas, New Methods
+layout: page
+title: Halil İbrahim Ergül
+subtitle: Senior Data Scientist & ML Engineer
 ---
+
+<style>
+  .hero-section {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+  }
+  .hero-section .hero-btns {
+    margin-top: 1.5rem;
+  }
+  .hero-section .hero-btns a {
+    margin: 0.3rem;
+  }
+  .impact-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 2rem 0;
+  }
+  .impact-box {
+    background: #f4f7fb;
+    border-radius: 8px;
+    padding: 1.1rem 1.6rem;
+    text-align: center;
+    min-width: 180px;
+    flex: 1 1 180px;
+    max-width: 220px;
+  }
+  .impact-box .impact-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0085A1;
+  }
+  .impact-box .impact-label {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.2rem;
+  }
+  .section-title {
+    margin: 2.5rem 0 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.4rem;
+  }
+  .project-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  .project-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+  }
+  .project-card p {
+    font-size: 0.93rem;
+    color: #444;
+    margin-bottom: 0.7rem;
+  }
+  .badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .tech-badge {
+    background: #e8f4f8;
+    color: #0085A1;
+    border-radius: 12px;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 600px) {
+    .skills-grid { grid-template-columns: 1fr; }
+  }
+  .skill-group h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0085A1;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .skill-group p {
+    font-size: 0.88rem;
+    color: #444;
+    margin: 0;
+  }
+  .connect-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f4f7fb;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+  .connect-section p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  .connect-section .connect-links a {
+    margin: 0 0.5rem;
+    font-weight: 600;
+  }
+</style>
+
+<!-- Hero -->
+<div class="hero-section">
+  <p class="lead" style="font-size:1.1rem; color:#555; max-width:600px; margin:0 auto;">
+    Building search systems, LLM pipelines, and data products that move the needle at scale.
+  </p>
+  <div class="hero-btns">
+    <a href="/aboutme" class="btn btn-primary">About Me</a>
+    <a href="/halil_resume.pdf" class="btn btn-outline-secondary" download>Download CV</a>
+  </div>
+</div>
+
+<!-- Impact Strip -->
+<div class="impact-strip">
+  <div class="impact-box">
+    <div class="impact-number">4+</div>
+    <div class="impact-label">Years Experience</div>
+  </div>
+  <div class="impact-box">
+    <div class="impact-number">2</div>
+    <div class="impact-label">Companies in Search & E-commerce</div>
+  </div>
+  <div class="impact-box">
+    <div class="impact-number">3</div>
+    <div class="impact-label">Research Publications</div>
+  </div>
+  <div class="impact-box">
+    <div class="impact-number">M.Sc.</div>
+    <div class="impact-label">Data Science — Sabancı University</div>
+  </div>
+</div>
+
+<!-- Featured Projects -->
+<div class="section-title">Featured Projects</div>
+
+<div class="project-card">
+  <h3>RAG-based Question-Answer System</h3>
+  <p>Production-ready RAG pipeline that ingests PDFs, performs semantic chunking, indexes into ElasticSearch, and returns answers with source citations via a FastAPI endpoint.</p>
+  <div class="badge-list">
+    <span class="tech-badge">LlamaIndex</span>
+    <span class="tech-badge">ElasticSearch</span>
+    <span class="tech-badge">FastAPI</span>
+    <span class="tech-badge">Docker</span>
+    <span class="tech-badge">OpenAI</span>
+  </div>
+  <a href="https://github.com/halilergul1/QA-app" target="_blank" class="btn btn-sm btn-outline-primary">View on GitHub</a>
+</div>
+
+<div class="project-card">
+  <h3>LLM Fine-Tuning with PEFT</h3>
+  <p>Lightweight toolkit for supervised fine-tuning of open-source LLMs using LoRA via Unsloth; supports any HuggingFace causal model with optimised inference through vLLM.</p>
+  <div class="badge-list">
+    <span class="tech-badge">LLaMA3</span>
+    <span class="tech-badge">LoRA</span>
+    <span class="tech-badge">Unsloth</span>
+    <span class="tech-badge">Hugging Face</span>
+    <span class="tech-badge">vLLM</span>
+  </div>
+  <a href="https://github.com/halilergul1/Fine-Tuning-LLM" target="_blank" class="btn btn-sm btn-outline-primary">View on GitHub</a>
+</div>
+
+<div class="project-card">
+  <h3>NLP-Powered Hotel Recommendation System</h3>
+  <p>Two-stage recommendation engine that retrieves top hotels via cosine similarity on BERTopic embeddings of Turkish descriptions, then re-ranks by composite popularity score — achieving 75% geographically relevant results.</p>
+  <div class="badge-list">
+    <span class="tech-badge">BERTopic</span>
+    <span class="tech-badge">Turkish NLP (Zemberek)</span>
+    <span class="tech-badge">Cosine Similarity</span>
+    <span class="tech-badge">Python</span>
+  </div>
+  <a href="https://github.com/halilergul1/nlp-reco" target="_blank" class="btn btn-sm btn-outline-primary">View on GitHub</a>
+</div>
+
+<p style="text-align:right; font-size:0.9rem;"><a href="/projects">See all projects →</a></p>
+
+<!-- Core Skills -->
+<div class="section-title">Core Skills</div>
+
+<div class="skills-grid">
+  <div class="skill-group">
+    <h4>ML & AI</h4>
+    <p>LLM fine-tuning, RAG, semantic search, ranking, recommendation systems, NLP, PyTorch, Hugging Face</p>
+  </div>
+  <div class="skill-group">
+    <h4>Search & Data</h4>
+    <p>ElasticSearch, vector embeddings, BigQuery, PySpark, Airflow, MLflow, Redis</p>
+  </div>
+  <div class="skill-group">
+    <h4>Engineering</h4>
+    <p>Python, SQL, FastAPI, Docker, GCP, AWS (S3, Athena, Batch), CI/CD</p>
+  </div>
+  <div class="skill-group">
+    <h4>Analytics</h4>
+    <p>A/B testing, Tableau, Looker, Google Analytics 4, experiment design, statistical inference</p>
+  </div>
+</div>
+
+<!-- Connect -->
+<div class="connect-section">
+  <p>Interested in search, LLMs, or data science at scale? Let's connect.</p>
+  <div class="connect-links">
+    <a href="https://www.linkedin.com/in/halil-i-ergul/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/halilergul1" target="_blank">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=L9S6bKAAAAAJ&hl=en" target="_blank">Google Scholar</a>
+  </div>
+</div>
