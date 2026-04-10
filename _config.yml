@@ -26,6 +26,7 @@ navbar-links:
   About Me: "aboutme"
   Projects: "projects"
   Publications: "publications"
+  Blog: "blog"
   CV: "/halil_resume.pdf"
 
 ################
